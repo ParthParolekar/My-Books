@@ -1,0 +1,42 @@
+.App {
+  font-family: "Poppins";
+  text-align: center;
+}
+
+.genre-btn {
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.genre-btn:hover {
+  background: black;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.loader {
+  margin: 30px auto;
+  border: 5px solid #f3f3f3; /* Light grey */
+
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    border-top: 5px solid grey;
+    border-right: 5px solid grey;
+    border-bottom: 5px solid grey;
+    border-left: 5px solid grey;
+
+    transform: rotate(0deg);
+  }
+
+  100% {
+    border-top: 5px solid grey;
+
+    transform: rotate(360deg);
+  }
+}
